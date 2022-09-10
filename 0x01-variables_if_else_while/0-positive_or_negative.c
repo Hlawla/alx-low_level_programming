@@ -1,17 +1,10 @@
-/*   
- * File: 0-positive_or_negative
- *
- */
-
 #include <stdlib.h>                                                                                                                                    
 #include <time.h>                                                                                                                                      
 #include <stdlib.h>
-
 /**
- * main - prints a random number and states whether 
- *         it is positive, negative, or zero.
+ * main - Entry point
  *      
- * Return: Always 0.
+ * Return: Always success
  */
 int main(void)
 {
@@ -22,10 +15,10 @@ int main(void)
 
 	 if (n > 0)
 		 printf("%d is positive\n", n);
-	 if else (n < 0)
-		 printf("%d is negative\n", n);
-	 else
+	 if else (n == 0)
 		 printf("%d is zero\n", n);
+	 else
+		 printf("%d is negative\n", n);
 
 	 Return (0);
 }
