@@ -1,19 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - lowercase alphabets
  *
- * Return: Always 0 (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
 	char c;
 
-	c = 'a';
-	while
-		(c <= 'z') {
+	for (c = 'a'; c <= 'z'; c++)
 			putchar(c);
-			c++;
-		}
-	putchar('\n');=
+
+
+	putchar('\n');
 	return (0);
 }
