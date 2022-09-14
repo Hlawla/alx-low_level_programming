@@ -1,27 +1,29 @@
-#include "holberton.h"
+#include "“main.h"                                                                                                                                                        
 
+/**                                                                                                                                                                       
 
+ * _islower - function to check for lowercase character                                                                                                                   
 
-/**
- *
- *  * _islower - a function that checks for lowercase character
- *
- *   * @c: single letter input
- *
- *    * Return: 1 if int c is lowercase, 0 if otherwise
- *
- *     */
+ * @c: is the int that will use for the argument of the function                                                                                                          
 
-int _islower(int c)
+ * Return: 0                                                                                                                                                              
 
-{
+ */                                                                                                                                                                       
 
-		if (c >= 'a' && c <= 'z')
+int _islower(int c)                                                                                                                                                       
 
-					return (1);
+{                                                                                                                                                                         
 
-			else
+        if (c >= 'a' && c <= 'z')                                                                                                                                         
 
-						return (0);
+        {                                                                                                                                                                 
 
-}
+                return (1);                                                                                                                                               
+
+        }                                                                                                                                                                 
+
+        else                                                                                                                                                              
+
+                return (0);                                                                                                                                               
+
+} 
