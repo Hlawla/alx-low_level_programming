@@ -1,18 +1,20 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#include "dog.h"
 
-#include <stdarg.h>
 /**
- * struct print - structure for printing various types
- * @t: type to print
- * @f: function to print
+ * init_dog - initializes a structure of type dog
+ * @d: pointer to structure
+ * @name: pointer to the name of the dog
+ * @age: age of dog
+ * @owner: pointer to owner of dog
+ *
+ * Return: void
  */
-typedef struct print
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	char *t;
-	int (*f)(va_list);
-} print_t;
-
-int _putchar(char c);
-int _printf(const char *format, ...);
-int print_c(va_list c);
+	if (d)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
+}
